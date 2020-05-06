@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   }
 
   public add(num1:number,num2:number):number{
-    return Number(num1) + Number(num2);
+    return num1 + num2;
   }
 
   public printAdd(num1:number,num2:number): any {

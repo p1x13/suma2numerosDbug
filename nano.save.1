@@ -1,0 +1,4 @@
+    (<HTMLInputElement>document.getElementById('num1')).value= '5';
+    (<HTMLInputElement>document.getElementById('num2')).value= '5';
+    document.getElementById('calc').click();
+    expect((<HTMLInputElement>document.getElementById('result')).value).toBe('10');
