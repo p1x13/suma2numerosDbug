@@ -23,10 +23,11 @@ describe('AppComponent', () => {
     }));
 
     it('la suma debe dar 10',async(() =>{
+    
       (<HTMLInputElement>document.getElementById("a")).valueAsNumber= 5;
       (<HTMLInputElement>document.getElementById("b")).valueAsNumber= 5;
-      document.getElementById('sumar').click();
-      expect((<HTMLInputElement>document.getElementById('result')).value).toBe('10'); 
+      document.getElementById("calc").click();
+      expect((<HTMLInputElement>document.getElementById("result")).value).toBe('10'); 
       }
   ));
 });
