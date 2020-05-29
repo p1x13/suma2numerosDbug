@@ -41,5 +41,22 @@ describe('AppComponent', () => {
     document.getElementById("calc").click();
     expect((<HTMLInputElement>document.getElementById("result")).value).toBe('10'); 
     }
-));
+    ));
+
+    it('contiene Suma', async(() =>{
+      const title = document.getElementById('title').innerHTML;
+      expect(title).toContain('Suma');
+    }));
+
+    it('titulo está definido', async(() =>{
+      const title = document.getElementById('title').innerHTML;
+      expect(title).toBeDefined();
+    }));
+    it('la Suma es mayor a 6', async(() =>{
+      (<HTMLInputElement>document.getElementById("a")).valueAsNumber= n;
+      (<HTMLInputElement>document.getElementById("b")).valueAsNumber= 5;
+      document.getElementById("calc").click();
+      expect((<HTMLInputElement>document.getElementById("result")).value).toBeGreaterThan(10); 
+    }));
+
 });
