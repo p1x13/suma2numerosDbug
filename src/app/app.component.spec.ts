@@ -48,6 +48,11 @@ describe('AppComponent', () => {
       expect(title).toContain('Suma');
     }));
 
+    it('contiene Suma', async(() =>{
+      const title = document.getElementById('title').innerHTML;
+      expect(title).toContain('Suma');
+    }));
+
     it('titulo está definido', async(() =>{
       const title = document.getElementById('title').innerHTML;
       expect(title).toBeDefined();
